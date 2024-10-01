@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habil Demirci</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        body {
+            font-family: "Playfair Display", serif;            margin: 0;
+            padding: 0;
+            background-color: #04010c;
+            color: #f1eed7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        header {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0;
+            background-color: #e0d8c0;
+            border-radius: 13px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f1eed7;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #f1eed7;
+            transition: font-weight 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            font-weight: bold;
+            transform: scale(1.05);
+        }
+        .hero {
+            grid-column: 2 / 3;
+            background-color: #e0d8c0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            border-radius: 10px;
+            z-index: 4;
+        }
+        .hbl-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .hbl-image img {
+            border-radius: 10px;
+            width: 50%;
+            height: auto;
+        }
+        .about {
+    background-color: #e0d8c0;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+.contact {
+    grid-column: 1 / 2;
+    background-color: #181818;
+    color: #f1eed7;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.contact p {
+    margin-top: 0;
+    text-decoration: none;
+}
+        .sidebar {
+            grid-column: 2 / 3;
+            display: flex;
+            flex-direction: column;
+            background-color: #e0d8c0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .sidebar h2, .sidebar h3 {
+            margin: 0 0 10px 0;
+        }
+        .sidebar img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: auto;
+        }
+        .social-links a {
+            color: #333;
+            text-decoration: none;
+            transition: font-weight 0.3s ease, transform 0.3s ease;
+        }
+        .social-links a:hover {
+            font-weight: bold;
+            transform: scale(1.05);
+        }
+        .mobile-app-section {
+                grid-column: 1 / 1;
+                background-color: #e0d8c0;
+                padding: 20px;
+                border-radius: 10px;
+                width: 600px;
+                height: 650px;
+                text-decoration: none;
+            }
+            .mobile-app-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-decoration: none;
+
+
+            }
+            .mobile-app-image img {
+                width: 300px;
+                height: auto;
+                margin-right: 20px;
+                padding: 10px;
+                border-radius: 65px;
+
+            }
+            .mobile-app-description {
+                max-width: 600px;
+                font-size: 16px;
+                color: #04010c;
+                text-decoration: none;
+
+            }
+        .video-container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: 10px;
+            z-index: 2;
+        }
+
+        .video {
+            position: relative; 
+            width: 55%;  
+            z-index: 2; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Habil Demirci</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="mailto:habildmrc@gmail.com">Contact</a>
+            </nav>
+        </header>
+        
+    <div class="video-container">
+        <video height="300" autoplay muted loop>
+            <source src="catchthepeter.mp4" type="video/mp4">
+        </video>
+        <video height="300" autoplay muted loop>
+            <source src="landmarkbook.mp4" type="video/mp4">
+            </video>
+        <video height="300" autoplay muted loop>
+            <source src="familyguybook.mp4" type="video/mp4">
+        </video>
+        <video height="300" autoplay muted loop>
+            <source src="webbb.mp4" type="video/mp4">
+        </video>
+    </div>
+        <div class="hero">
+            <h1>Welcome</h1>
+        </div>
+
+        <div class="about">
+            <p><br>Hello,</br> My name is Habil Demirci, and I am a computer programming student. I am passionate about enhancing my skills in the field of software development and participating in innovative projects. I am particularly interested in topics such as Swift, artificial intelligence, and data science. I am eager to contribute to the advancement of technology and make a meaningful impact in this field. I am open to communication and am always receptive to exploring new ideas.</p>
+        </div>
+        
+        <div class="contact" >
+            <h2><a href="https://www.linkedin.com/in/habil-demirci/">Contact me</a></h2>
+            <p><a href="mailto:habildmrc@gmail.com">Have some questions?</a></p>
+        </div>
+        <div class="mobile-app-section">
+            <h2><a href="https://github.com/habildem/Catch-The-Peter-Game">Catch The Peter Game</a></h2>
+            <div class="mobile-app-container">
+                <div class="mobile-app-image">
+                    <img src="peter.png" alt="Mobile App Preview">
+                </div>
+                <div class="mobile-app-description">
+                    <p>Here’s the big one. I think it’s the largest app I’ve ever made, haha. While developing this app, I tried to place the characters randomly on the screen, but most of the time they spawned too close together. So, I set 12 distinct locations on the screen, which resulted in a more challenging game where characters spawn far apart from each other.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="sidebar">
+            <div class="hbl-image">
+                <img src="IMG_0119.jpeg" alt="Habil Demirci">
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/habildem/">INSTAGRAM</a>
+                <a href="https://www.linkedin.com/in/habil-demirci/">Linkedin</a>
+                <a href="https://github.com/habildem">Github</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

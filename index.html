@@ -185,9 +185,21 @@
             width: 55%;  
             z-index: 2; 
         }
+        #preloader{
+            background: #000 url(preloader.gif) no-repeat center center;
+            background-size: 15p;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+        }
+
+
     </style>
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 </head>
 <body>
+    <div id="preloader"></div>
     <div class="container">
         <header>
             <div class="logo">Habil Demirci</div>
@@ -235,7 +247,6 @@
                 </div>
             </div>
         </div>
-    
         <div class="sidebar">
             <div class="hbl-image">
                 <img src="IMG_0119.jpeg" alt="Habil Demirci">
@@ -247,5 +258,15 @@
             </div>
         </div>
     </div>
+    <script>
+        function closepreloader(){
+            document.getElementById("preloader").style.display = 'none';
+        }
+        window.addEventListener("load",function(){
+            setTimeout(closepreloader, 2000);
+        
+        });
+    </script>
+    
 </body>
 </html>
